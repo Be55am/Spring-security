@@ -15,6 +15,11 @@ import org.springframework.security.core.authority.mapping.SimpleAuthorityMapper
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 
+/**
+ * this is a basic authentication configuration with a authorisation management
+ * this configuration isnt recommended because it doenst support the loggin off also you can't customise the login form
+ */
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true) //turn on method level security to work with roles (@Secure & @PreAuthorise in the controllers).
